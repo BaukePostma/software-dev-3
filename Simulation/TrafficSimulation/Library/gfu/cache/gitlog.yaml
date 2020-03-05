@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2020-03-05T11:51:05.588+01:00
+  initializedAtString: 2020-03-05T11:48:56.251+01:00
+  log:
+  - commitID: 36ef4cdaca6a5f51b040f1a8be9abf0b52e85ddf
+    mergeA: 
+    mergeB: 
+    authorName: BaukePostma
+    authorEmail: bauke.j.p@hotmail.com
+    commitEmail: bauke.j.p@hotmail.com
+    commitName: BaukePostma
+    summary: Added java project
+    description: 
+    timeString: 2020-03-05T11:34:34.000+01:00
+    commitTimeString: 2020-03-05T11:34:34.000+01:00
+    changes:
+    - path: Controller\.idea\misc.xml
+      fullPath: D:\GithubRepos\software-dev-3\Controller\.idea\misc.xml
+      projectPath: ..\..\Controller\.idea\misc.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\.idea\modules.xml
+      fullPath: D:\GithubRepos\software-dev-3\Controller\.idea\modules.xml
+      projectPath: ..\..\Controller\.idea\modules.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\.idea\vcs.xml
+      fullPath: D:\GithubRepos\software-dev-3\Controller\.idea\vcs.xml
+      projectPath: ..\..\Controller\.idea\vcs.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\.idea\workspace.xml
+      fullPath: D:\GithubRepos\software-dev-3\Controller\.idea\workspace.xml
+      projectPath: ..\..\Controller\.idea\workspace.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\Controller.iml
+      fullPath: D:\GithubRepos\software-dev-3\Controller\Controller.iml
+      projectPath: ..\..\Controller\Controller.iml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\src\nl\nhl\trafficcontroller\TrafficController.java
+      fullPath: D:\GithubRepos\software-dev-3\Controller\src\nl\nhl\trafficcontroller\TrafficController.java
+      projectPath: ..\..\Controller\src\nl\nhl\trafficcontroller\TrafficController.java
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: d656a665c72109a77ca2d82f6e02e22e26084ba4
+    mergeA: 
+    mergeB: 
+    authorName: BaukePostma
+    authorEmail: bauke.j.p@hotmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Create README.md
+    description: 
+    timeString: 2020-03-05T10:42:50.000+01:00
+    commitTimeString: 2020-03-05T10:42:50.000+01:00
+    changes:
+    - path: README.md
+      fullPath: D:\GithubRepos\software-dev-3\README.md
+      projectPath: ..\..\README.md
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
