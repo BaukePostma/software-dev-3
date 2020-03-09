@@ -13,13 +13,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-03-05T11:51:05.460+01:00
-  initializedAtString: 2020-03-05T11:48:57.157+01:00
+  lastUpdatedAtString: 2020-03-09T19:42:10.200+01:00
+  initializedAtString: 2020-03-09T19:42:10.172+01:00
   localBranches:
+  - name: JavaWebsocket
+    tracking: 
   - name: master
     tracking: origin/master
   remoteBranches:
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
     tracking: '[None]'
   remotes:
   - name: origin
@@ -31,8 +35,14 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - JavaWebsocket
     - master
     values:
+    - name: JavaWebsocket
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
     - name: master
       remote:
         name: origin
@@ -44,9 +54,15 @@ MonoBehaviour:
     subKeys:
     - Values:
       - HEAD
+      - master
     subKeyValues:
     - Values:
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/BaukePostma/software-dev-3.git
+        trackingBranch: 
+      - name: master
         remote:
           name: origin
           url: https://github.com/BaukePostma/software-dev-3.git
