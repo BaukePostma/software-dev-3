@@ -13,9 +13,837 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-03-09T19:42:27.637+01:00
-  initializedAtString: 2020-03-09T19:42:27.568+01:00
+  lastUpdatedAtString: 2020-03-10T10:23:19.598+01:00
+  initializedAtString: 2020-03-10T10:23:19.598+01:00
   log:
+  - commitID: f7349580ab3217bce9e2ed2d63acd8044142f168
+    mergeA: 
+    mergeB: 
+    authorName: BaukePostma
+    authorEmail: bauke.j.p@hotmail.com
+    commitEmail: bauke.j.p@hotmail.com
+    commitName: BaukePostma
+    summary: V 0.1 communication
+    description: Working Node.JS server , working Unity client
+    timeString: 2020-03-09T20:23:03.000+01:00
+    commitTimeString: 2020-03-09T20:23:03.000+01:00
+    changes:
+    - path: .gitignore
+      fullPath: D:\GithubRepos\software-dev-3\.gitignore
+      projectPath: ..\..\.gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\.idea\libraries\javax_websocket_javax_websocket_api_1_1.xml
+      fullPath: D:\GithubRepos\software-dev-3\Controller\.idea\libraries\javax_websocket_javax_websocket_api_1_1.xml
+      projectPath: ..\..\Controller\.idea\libraries\javax_websocket_javax_websocket_api_1_1.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\.idea\libraries\org_json_json_20140107.xml
+      fullPath: D:\GithubRepos\software-dev-3\Controller\.idea\libraries\org_json_json_20140107.xml
+      projectPath: ..\..\Controller\.idea\libraries\org_json_json_20140107.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\.idea\workspace.xml
+      fullPath: D:\GithubRepos\software-dev-3\Controller\.idea\workspace.xml
+      projectPath: ..\..\Controller\.idea\workspace.xml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Controller\Controller.iml
+      fullPath: D:\GithubRepos\software-dev-3\Controller\Controller.iml
+      projectPath: ..\..\Controller\Controller.iml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Controller\json-simple-1.1.jar
+      fullPath: D:\GithubRepos\software-dev-3\Controller\json-simple-1.1.jar
+      projectPath: ..\..\Controller\json-simple-1.1.jar
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\out\production\Controller\nl\nhl\trafficcontroller\TrafficController.class
+      fullPath: D:\GithubRepos\software-dev-3\Controller\out\production\Controller\nl\nhl\trafficcontroller\TrafficController.class
+      projectPath: ..\..\Controller\out\production\Controller\nl\nhl\trafficcontroller\TrafficController.class
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\out\production\Controller\nl\nhl\trafficcontroller\WebsocketConnection.class
+      fullPath: D:\GithubRepos\software-dev-3\Controller\out\production\Controller\nl\nhl\trafficcontroller\WebsocketConnection.class
+      projectPath: ..\..\Controller\out\production\Controller\nl\nhl\trafficcontroller\WebsocketConnection.class
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Controller\src\nl\nhl\trafficcontroller\TrafficController.java
+      fullPath: D:\GithubRepos\software-dev-3\Controller\src\nl\nhl\trafficcontroller\TrafficController.java
+      projectPath: ..\..\Controller\src\nl\nhl\trafficcontroller\TrafficController.java
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Controller\src\nl\nhl\trafficcontroller\WebsocketConnection.java
+      fullPath: D:\GithubRepos\software-dev-3\Controller\src\nl\nhl\trafficcontroller\WebsocketConnection.java
+      projectPath: ..\..\Controller\src\nl\nhl\trafficcontroller\WebsocketConnection.java
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\.suo
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\.suo
+      projectPath: .vs\TrafficSimulation\v15\.suo
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\Server\sqlite3\db.lock
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\Server\sqlite3\db.lock
+      projectPath: .vs\TrafficSimulation\v15\Server\sqlite3\db.lock
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\Server\sqlite3\storage.ide
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\Server\sqlite3\storage.ide
+      projectPath: .vs\TrafficSimulation\v15\Server\sqlite3\storage.ide
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\Server\sqlite3\storage.ide-shm
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\Server\sqlite3\storage.ide-shm
+      projectPath: .vs\TrafficSimulation\v15\Server\sqlite3\storage.ide-shm
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\Server\sqlite3\storage.ide-wal
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\Server\sqlite3\storage.ide-wal
+      projectPath: .vs\TrafficSimulation\v15\Server\sqlite3\storage.ide-wal
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assembly-CSharp-Editor-firstpass.csproj
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assembly-CSharp-Editor-firstpass.csproj
+      projectPath: Assembly-CSharp-Editor-firstpass.csproj
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assembly-CSharp.csproj
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\Materials.meta
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\Materials.meta
+      projectPath: Assets\Materials.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\Materials\Materials.meta
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\Materials\Materials.meta
+      projectPath: Assets\Materials\Materials.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\Models.meta
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\Models.meta
+      projectPath: Assets\Models.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\Scripts.meta
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\Scripts.meta
+      projectPath: Assets\Scripts.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\Scripts\NativeWebSocket.cs
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\Scripts\NativeWebSocket.cs
+      projectPath: Assets\Scripts\NativeWebSocket.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\Scripts\NativeWebSocket.cs.meta
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\Scripts\NativeWebSocket.cs.meta
+      projectPath: Assets\Scripts\NativeWebSocket.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\Scripts\WebSocketConnection.cs
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\Scripts\WebSocketConnection.cs
+      projectPath: Assets\Scripts\WebSocketConnection.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\Scripts\WebSocketConnection.cs.meta
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\Scripts\WebSocketConnection.cs.meta
+      projectPath: Assets\Scripts\WebSocketConnection.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\WebSocketConnector.cs
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\WebSocketConnector.cs
+      projectPath: Assets\WebSocketConnector.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\WebSocketConnector.cs.meta
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\WebSocketConnector.cs.meta
+      projectPath: Assets\WebSocketConnector.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\testscene.unity
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\testscene.unity
+      projectPath: Assets\testscene.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Assets\testscene.unity.meta
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Assets\testscene.unity.meta
+      projectPath: Assets\testscene.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ArtifactDB
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ArtifactDB
+      projectPath: Library\ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\01\0197175640d960c7fa7af0cd20fbea56
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\01\0197175640d960c7fa7af0cd20fbea56
+      projectPath: Library\Artifacts\01\0197175640d960c7fa7af0cd20fbea56
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\2c\2cb8e05024cd20df32f9e6c5f83be334
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\2c\2cb8e05024cd20df32f9e6c5f83be334
+      projectPath: Library\Artifacts\2c\2cb8e05024cd20df32f9e6c5f83be334
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\49\49585a98906a881c7124cbf2bbf6d982
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\49\49585a98906a881c7124cbf2bbf6d982
+      projectPath: Library\Artifacts\49\49585a98906a881c7124cbf2bbf6d982
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\5f\5f72d549fac6b4b5f0d844d7025aab5e
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\5f\5f72d549fac6b4b5f0d844d7025aab5e
+      projectPath: Library\Artifacts\5f\5f72d549fac6b4b5f0d844d7025aab5e
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\7b\7b42fc124853551a097af97c829b46fe
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\7b\7b42fc124853551a097af97c829b46fe
+      projectPath: Library\Artifacts\7b\7b42fc124853551a097af97c829b46fe
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\97\97250bd7e9b99dc07a7ccf7c54cae553
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\97\97250bd7e9b99dc07a7ccf7c54cae553
+      projectPath: Library\Artifacts\97\97250bd7e9b99dc07a7ccf7c54cae553
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\a9\a91849750ddec0db81fa2ebea5079efa
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\a9\a91849750ddec0db81fa2ebea5079efa
+      projectPath: Library\Artifacts\a9\a91849750ddec0db81fa2ebea5079efa
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\c8\c8b92467b36bd498a2540f6b3fd40258
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\c8\c8b92467b36bd498a2540f6b3fd40258
+      projectPath: Library\Artifacts\c8\c8b92467b36bd498a2540f6b3fd40258
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\e9\e9afa4417cd5009be9e8d4f80b3fdd22
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\e9\e9afa4417cd5009be9e8d4f80b3fdd22
+      projectPath: Library\Artifacts\e9\e9afa4417cd5009be9e8d4f80b3fdd22
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\Artifacts\f0\f0bc7827aefd0cb303d043da1ee2f30a
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\Artifacts\f0\f0bc7827aefd0cb303d043da1ee2f30a
+      projectPath: Library\Artifacts\f0\f0bc7827aefd0cb303d043da1ee2f30a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\CurrentLayout-default.dwlt
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\EditorInstance.json
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\EditorInstance.json
+      projectPath: Library\EditorInstance.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\InspectorExpandedItems.asset
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\InspectorExpandedItems.asset
+      projectPath: Library\InspectorExpandedItems.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\LastSceneManagerSetup.txt
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\LastSceneManagerSetup.txt
+      projectPath: Library\LastSceneManagerSetup.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\SceneVisibilityState.asset
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\SceneVisibilityState.asset
+      projectPath: Library\SceneVisibilityState.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.Timeline.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.Timeline.dll
+      projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\UnityEditor.UI.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\UnityEditor.UI.dll
+      projectPath: Library\ScriptAssemblies\UnityEditor.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\ScriptAssemblies\UnityEngine.UI.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ScriptAssemblies\UnityEngine.UI.dll
+      projectPath: Library\ScriptAssemblies\UnityEngine.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\SourceAssetDB
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\StateCache\Hierarchy\2bfb6b-mainStage.json
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\StateCache\Hierarchy\2bfb6b-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\2bfb6b-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\StateCache\SceneView\8b64f7-mainStage.json
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\StateCache\SceneView\8b64f7-mainStage.json
+      projectPath: Library\StateCache\SceneView\8b64f7-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\gfu\cache\branches.yaml
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\gfu\cache\gitlog.yaml
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\gfu\cache\gituser.yaml
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\gfu\cache\gituser.yaml
+      projectPath: Library\gfu\cache\gituser.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-01f4fbc13361ee649822da3236dc2906
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-01f4fbc13361ee649822da3236dc2906
+      projectPath: Temp\UnityTempFile-01f4fbc13361ee649822da3236dc2906
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-087eecca08b810145b0bac9808f88595
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-087eecca08b810145b0bac9808f88595
+      projectPath: Temp\UnityTempFile-087eecca08b810145b0bac9808f88595
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-0f56483d6029d5247a574a0498267d0b
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-0f56483d6029d5247a574a0498267d0b
+      projectPath: Temp\UnityTempFile-0f56483d6029d5247a574a0498267d0b
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-2137427331aa54f4caf35385e548a338
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-2137427331aa54f4caf35385e548a338
+      projectPath: Temp\UnityTempFile-2137427331aa54f4caf35385e548a338
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-26d7c297e85223b4b946d1fdd563c4a7
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-26d7c297e85223b4b946d1fdd563c4a7
+      projectPath: Temp\UnityTempFile-26d7c297e85223b4b946d1fdd563c4a7
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-30702a5d8c61aa04c80bbe6823461b8b
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-30702a5d8c61aa04c80bbe6823461b8b
+      projectPath: Temp\UnityTempFile-30702a5d8c61aa04c80bbe6823461b8b
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-360503821a6ccfe409308cc46eea3f6f
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-360503821a6ccfe409308cc46eea3f6f
+      projectPath: Temp\UnityTempFile-360503821a6ccfe409308cc46eea3f6f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-361fc6fc5fb750d488fa24007d6d05e2
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-361fc6fc5fb750d488fa24007d6d05e2
+      projectPath: Temp\UnityTempFile-361fc6fc5fb750d488fa24007d6d05e2
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-3a9755512d4c9d74f8387a2d325b710c
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-3a9755512d4c9d74f8387a2d325b710c
+      projectPath: Temp\UnityTempFile-3a9755512d4c9d74f8387a2d325b710c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-3ea1b9ae27a15ce40a46bd354468ddb1
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-3ea1b9ae27a15ce40a46bd354468ddb1
+      projectPath: Temp\UnityTempFile-3ea1b9ae27a15ce40a46bd354468ddb1
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-46233149d403c4c4ab2e1f57696c0428
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-46233149d403c4c4ab2e1f57696c0428
+      projectPath: Temp\UnityTempFile-46233149d403c4c4ab2e1f57696c0428
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-4ca49e0460b5bb34aabb043279b2a258
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-4ca49e0460b5bb34aabb043279b2a258
+      projectPath: Temp\UnityTempFile-4ca49e0460b5bb34aabb043279b2a258
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-4e897f5930c011e47ad7d210377e7e8c
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-4e897f5930c011e47ad7d210377e7e8c
+      projectPath: Temp\UnityTempFile-4e897f5930c011e47ad7d210377e7e8c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-4f11b269c23835344ab2c1adb549036c
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-4f11b269c23835344ab2c1adb549036c
+      projectPath: Temp\UnityTempFile-4f11b269c23835344ab2c1adb549036c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-534de1163afd66e48b2e1a1016fb2883
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-534de1163afd66e48b2e1a1016fb2883
+      projectPath: Temp\UnityTempFile-534de1163afd66e48b2e1a1016fb2883
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-57baeaa290e3e3a448dd752f8d4db45c
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-57baeaa290e3e3a448dd752f8d4db45c
+      projectPath: Temp\UnityTempFile-57baeaa290e3e3a448dd752f8d4db45c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-60c4d344f6207d6408c333668c11db1e
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-60c4d344f6207d6408c333668c11db1e
+      projectPath: Temp\UnityTempFile-60c4d344f6207d6408c333668c11db1e
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-6cd3ededaedbc404791d8daeecee322e
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-6cd3ededaedbc404791d8daeecee322e
+      projectPath: Temp\UnityTempFile-6cd3ededaedbc404791d8daeecee322e
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-7ed004496648d9245a8409cd3d555ba6
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-7ed004496648d9245a8409cd3d555ba6
+      projectPath: Temp\UnityTempFile-7ed004496648d9245a8409cd3d555ba6
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-8190ae8c99cd345409181576a563be09
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-8190ae8c99cd345409181576a563be09
+      projectPath: Temp\UnityTempFile-8190ae8c99cd345409181576a563be09
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-927a42bca331c814180c4ac8e391300f
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-927a42bca331c814180c4ac8e391300f
+      projectPath: Temp\UnityTempFile-927a42bca331c814180c4ac8e391300f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-a6028fd8204314b4bb7e8fba3ab9e5b5
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-a6028fd8204314b4bb7e8fba3ab9e5b5
+      projectPath: Temp\UnityTempFile-a6028fd8204314b4bb7e8fba3ab9e5b5
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-a7cbe0c038772934b8c5bde111396a28
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-a7cbe0c038772934b8c5bde111396a28
+      projectPath: Temp\UnityTempFile-a7cbe0c038772934b8c5bde111396a28
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-b21ac99d9ddfded41ac4c81a7126dc3f
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-b21ac99d9ddfded41ac4c81a7126dc3f
+      projectPath: Temp\UnityTempFile-b21ac99d9ddfded41ac4c81a7126dc3f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-b320150cec468e14c83114dfd9b6d068
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-b320150cec468e14c83114dfd9b6d068
+      projectPath: Temp\UnityTempFile-b320150cec468e14c83114dfd9b6d068
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-b8e917dc32a6bd143a1e945a9db70d50
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-b8e917dc32a6bd143a1e945a9db70d50
+      projectPath: Temp\UnityTempFile-b8e917dc32a6bd143a1e945a9db70d50
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-c65552bec6200ba429cfe1a0eb0f5480
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-c65552bec6200ba429cfe1a0eb0f5480
+      projectPath: Temp\UnityTempFile-c65552bec6200ba429cfe1a0eb0f5480
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-c7e969bed136c324a9f1a640863b7cc9
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-c7e969bed136c324a9f1a640863b7cc9
+      projectPath: Temp\UnityTempFile-c7e969bed136c324a9f1a640863b7cc9
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-d90958c5e571fa04cab06e918bc1f52d
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-d90958c5e571fa04cab06e918bc1f52d
+      projectPath: Temp\UnityTempFile-d90958c5e571fa04cab06e918bc1f52d
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-dffffaf7296b2c04ca9c05c64f8e4767
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-dffffaf7296b2c04ca9c05c64f8e4767
+      projectPath: Temp\UnityTempFile-dffffaf7296b2c04ca9c05c64f8e4767
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-e81bfe0e5faf2a84d82df068b3015d54
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-e81bfe0e5faf2a84d82df068b3015d54
+      projectPath: Temp\UnityTempFile-e81bfe0e5faf2a84d82df068b3015d54
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-fadf73a07b5d0fe429364b847c63d257
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-fadf73a07b5d0fe429364b847c63d257
+      projectPath: Temp\UnityTempFile-fadf73a07b5d0fe429364b847c63d257
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-fdce4f771c7a66144bdc2a52e51c9fba
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-fdce4f771c7a66144bdc2a52e51c9fba
+      projectPath: Temp\UnityTempFile-fdce4f771c7a66144bdc2a52e51c9fba
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-feab5427deed70c49a01b4f83a88b937
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-feab5427deed70c49a01b4f83a88b937
+      projectPath: Temp\UnityTempFile-feab5427deed70c49a01b4f83a88b937
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\Temp\UnityTempFile-fedf24924873a0d40be5512b6e16ba23
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Temp\UnityTempFile-fedf24924873a0d40be5512b6e16ba23
+      projectPath: Temp\UnityTempFile-fedf24924873a0d40be5512b6e16ba23
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\TrafficSimulation.sln
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\TrafficSimulation.sln
+      projectPath: TrafficSimulation.sln
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+      projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.csproj.CopyComplete
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.csproj.CopyComplete
+      projectPath: obj\Debug\Assembly-CSharp.csproj.CopyComplete
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+      projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+      projectPath: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.dll
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.dll
+      projectPath: obj\Debug\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.pdb
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\Assembly-CSharp.pdb
+      projectPath: obj\Debug\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+      projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+      projectPath: obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+      projectPath: obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Simulation\TrafficSimulation\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+      fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+      projectPath: obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\.idea\.gitignore
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\.idea\.gitignore
+      projectPath: ..\..\socketiocontroller\.idea\.gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\.idea\jsLibraryMappings.xml
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\.idea\jsLibraryMappings.xml
+      projectPath: ..\..\socketiocontroller\.idea\jsLibraryMappings.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\.idea\misc.xml
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\.idea\misc.xml
+      projectPath: ..\..\socketiocontroller\.idea\misc.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\.idea\modules.xml
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\.idea\modules.xml
+      projectPath: ..\..\socketiocontroller\.idea\modules.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\.idea\runConfigurations\bin_www.xml
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\.idea\runConfigurations\bin_www.xml
+      projectPath: ..\..\socketiocontroller\.idea\runConfigurations\bin_www.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\.idea\socketiocontroller.iml
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\.idea\socketiocontroller.iml
+      projectPath: ..\..\socketiocontroller\.idea\socketiocontroller.iml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\.idea\vcs.xml
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\.idea\vcs.xml
+      projectPath: ..\..\socketiocontroller\.idea\vcs.xml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\app.js
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\app.js
+      projectPath: ..\..\socketiocontroller\app.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\bin\www
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\bin\www
+      projectPath: ..\..\socketiocontroller\bin\www
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\index.html
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\index.html
+      projectPath: ..\..\socketiocontroller\index.html
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\index.js
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\index.js
+      projectPath: ..\..\socketiocontroller\index.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\package-lock.json
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\package-lock.json
+      projectPath: ..\..\socketiocontroller\package-lock.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\package.json
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\package.json
+      projectPath: ..\..\socketiocontroller\package.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\public\stylesheets\style.css
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\public\stylesheets\style.css
+      projectPath: ..\..\socketiocontroller\public\stylesheets\style.css
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\routes\index.js
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\routes\index.js
+      projectPath: ..\..\socketiocontroller\routes\index.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\routes\users.js
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\routes\users.js
+      projectPath: ..\..\socketiocontroller\routes\users.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\views\error.pug
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\views\error.pug
+      projectPath: ..\..\socketiocontroller\views\error.pug
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\views\index.pug
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\views\index.pug
+      projectPath: ..\..\socketiocontroller\views\index.pug
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: socketiocontroller\views\layout.pug
+      fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\views\layout.pug
+      projectPath: ..\..\socketiocontroller\views\layout.pug
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
   - commitID: 127540385e0f67c416079f36f00cc620e08319a5
     mergeA: 
     mergeB: 
