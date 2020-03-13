@@ -1,36 +1,37 @@
-module.exports =  class TrafficLogic{
-// Class responsible for calculating traffic lights
 
+const LightObject = require('./LightObject.js');
+const LightObjectTemplates = require('./LightObjectTemplates.js');
+
+module.exports =  class TrafficLogic {
 
      CreateResponse(lightsstatus){
         let traffic = JSON.parse(lightsstatus);
         let response = this.DebugGenerateJsonResponse(traffic);
-
         console.log(response);
+
         return response;
     }
 
     CalculateLights(traffic) {
 
       // Do some fancy shit on the traffic object to determine the best state
-        let obj = { Name:"John" , age:30};
 
-        let Jsonobj = JSON.stringify(obj);
-        console.log(Jsonobj);
         return Jsonobj;
     }
+    //Temporary function. Returns an all red message
     DebugGenerateJsonResponse(traffic){
-        let debugresponse = {
-            a1:0,
-            a2:0,
-            a3:0,
-            a4:0,
-            ab1:0,
-            ab2:0
-        }
 
-        let jsondebugresponse = JSON.stringify(debugresponse);
-        return jsondebugresponse;
+         let obj  = LightObjectTemplates.prototype.GetA();
+         let jsondebugresponse = JSON.stringify(obj);
+         return jsondebugresponse;
+    }
+    IterateOverLights(lightsObject){
+
+         lightsObject = JSON.parse(lightsObject);
+         Object.keys(lightsObject).forEach(function(key){
+             console.log("Key:   " + key);
+             console.log("Value: " + lightsObject[key]);
+         })
     }
 
 
