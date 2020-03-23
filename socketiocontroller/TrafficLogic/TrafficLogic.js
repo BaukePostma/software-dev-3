@@ -66,6 +66,8 @@ module.exports =  class TrafficLogic {
              priorities[key] = trafficSum[key] * this.TimeSinceCycle[key];
          }
 
+        console.log("-- NEW PRIORITIES --");
+        console.log(priorities);
         let priorityCycle ;
         let priorityHighscore = 0;
         // Loop over all possible cycles
@@ -88,6 +90,9 @@ module.exports =  class TrafficLogic {
         }
         console.log("PriorityCycle = " + priorityCycle);
         let x = templates.GetCycle(priorityCycle);
+
+        // TODO FIND A BETTER PLACE TO PUT THIS BIT OF CODE
+        this.TimeSinceCycle[priorityCycle] =  0;
         return x;
 
 
@@ -126,7 +131,7 @@ module.exports =  class TrafficLogic {
         let cycle3 = templates.GetCycle3();
         let cycle4 = templates.GetCycle4();
 
-        console.log("Cycle0: " + cycle0);
+
 
         let trafficCount = {0: this.CalculateTraffic(cycle0, trafficstatus),
                             1: this.CalculateTraffic(cycle1, trafficstatus),
@@ -158,5 +163,13 @@ module.exports =  class TrafficLogic {
         }
         console.log("--- SUM OF THIS CYCLE  IS EQUAL TO " + sum)
         return sum;
+    }
+
+    IncrementTrafficTime(miliseconds){
+
+        for(let key in this.TimeSinceCycle){
+
+            this.TimeSinceCycle[key] =  this.TimeSinceCycle[key] + miliseconds;
+        }
     }
 }

@@ -15,7 +15,8 @@ const templates = new LightObjectTemplates;
         // TODO Async handling of incoming messages
 
 
-        let x = traffic.CalculateNextCycle();
+
+
         traffic.CurrentCycle = traffic.CalculateNextCycle();
         let orange = traffic.ChangeGreensToOrange(traffic.CurrentCycle);
 
@@ -36,6 +37,9 @@ const templates = new LightObjectTemplates;
         console.log("ClearanceTime  DONE");
 
 
+        traffic.IncrementTrafficTime(11500);
+
+        console.log(traffic.TimeSinceCycle);
 
         // setTimeout(client.send(JSON.stringify(LightObjectTemplates.prototype.GetRed())), traffic.OrangeTime);
 
@@ -71,20 +75,21 @@ console.log("Connection made");
                     traffic.CurrentTraffic = JSON.parse(data);
                     // TODO Start the loop if not already started, otherwise set the new incoming traffic
                     if (!traffic.isLooping){
-                        traffic.isLooping = true;
+
 
 
                         // todo: THIS WORKS NOW
-                        traffic.CurrentCycle = traffic.CalculateNextCycle();
+                      //  traffic.CurrentCycle = traffic.CalculateNextCycle();
 
                      //   traffic.CalculateNextCycle(), function(thingy){
                       //      console.log(thingy);
                       //  }
-
+                        traffic.isLooping = true;
                         MainDataLoop(traffic,client);
 
                        // setInterval(MainDataLoop(traffic, client),10000)
                         let cycletime = traffic.GreenTime + traffic.ClearanceTime + traffic.OrangeTime;
+                        console.log("FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping);
                        // setInterval(function(){ alert("Hello"); }, 3000);
                        // setInterval(MainDataLoop(traffic,client),cycletime)
                         //setInterval(() => MainDataLoop(traffic,client), cycletime)
@@ -92,6 +97,10 @@ console.log("Connection made");
 
 
                        // MainDataLoop(traffic, client);
+
+                    }else{
+                        console.log("NOT THE FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping );
+
                     }
                     // We got a JSON object
                     // (Optional - Check JSOn validity)
