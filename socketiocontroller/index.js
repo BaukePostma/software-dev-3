@@ -7,7 +7,7 @@ const wss = new WebSocket.Server({ port: 8080 });
 const traffic = new TrafficLogic;
 const templates = new LightObjectTemplates;
 
- function MainDataLoop(traffic, client){
+  async function MainDataLoop(traffic, client){
 
 
     while(traffic.isLooping){
@@ -22,17 +22,17 @@ const templates = new LightObjectTemplates;
         console.log("SENDING GREEN");
         client.send(JSON.stringify(traffic.CurrentCycle));
        // setTimeout(function(){ client.send(JSON.stringify(traffic.CurrentCycle)) }, traffic.GreenTime);
-      //  await sleep(traffic.GreenTime);
+        await sleep(traffic.GreenTime);
         console.log("GREENTIME DONE");
 
         console.log("SENDING ORANGE");
         client.send(JSON.stringify(orange));
-       // await sleep(traffic.OrangeTime);
+        await sleep(traffic.OrangeTime);
         console.log("ORANGETIME  DONE");
 
         console.log("SENDING RED");
         client.send(JSON.stringify(templates.GetRed()));
-      //  await sleep(traffic.ClearanceTime);
+        await sleep(traffic.ClearanceTime);
         console.log("ClearanceTime  DONE");
 
 
@@ -74,13 +74,14 @@ console.log("Connection made");
                         traffic.isLooping = true;
 
 
-                        // todo: THIS WORKS NOW 
+                        // todo: THIS WORKS NOW
                         traffic.CurrentCycle = traffic.CalculateNextCycle();
 
                      //   traffic.CalculateNextCycle(), function(thingy){
                       //      console.log(thingy);
                       //  }
 
+                        MainDataLoop(traffic,client);
 
                        // setInterval(MainDataLoop(traffic, client),10000)
                         let cycletime = traffic.GreenTime + traffic.ClearanceTime + traffic.OrangeTime;
