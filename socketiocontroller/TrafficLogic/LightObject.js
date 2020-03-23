@@ -10,6 +10,7 @@ module.exports = class LightObject{
     b2 = 0
     b3 = 0
     b4 = 0
+    b5 = 0
     bb1 = 0
     c1 = 0
     c2 = 0
