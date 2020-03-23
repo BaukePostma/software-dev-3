@@ -9,16 +9,18 @@ module.exports = class LightObjectTemplates{
 
     GetCycle(cycle) {
         switch (cycle) {
-            case 0:
+            case "0":
                 return this.GetCycle0();
-            case 1:
+            case "1":
                 return this.GetCycle1();
-            case 2:
+            case "2":
                 return this.GetCycle2();
-            case 3:
+            case "3":
                 return this.GetCycle3();
-            case 4:
+            case "4":
                 return this.GetCycle4();
+            default:
+                console.log("ERRORR");
         }
     }
 

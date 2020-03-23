@@ -1,7 +1,5 @@
 const WebSocket = require('ws');
-
 const TrafficLogic = require('./TrafficLogic/TrafficLogic.js');
-//const LightObject = require('./TrafficLogic/LightObject.js');
 const LightObjectTemplates = require('./TrafficLogic/LightObjectTemplates');
 
 
@@ -61,8 +59,7 @@ console.log("Connection made");
         let isJson;
         //Check if the message is JSON
         try  {
-            traffic.CurrentTraffic = JSON.parse(data);
-
+            JSON.parse(data);
             isJson = 1;
         } catch(e){
             console.log("Not JSON")
@@ -71,11 +68,28 @@ console.log("Connection made");
         wss.clients.forEach( function each(client) {
             if (client.readyState === WebSocket.OPEN) {
                 if (isJson === 1){
-
+                    traffic.CurrentTraffic = JSON.parse(data);
+                    // TODO Start the loop if not already started, otherwise set the new incoming traffic
                     if (!traffic.isLooping){
                         traffic.isLooping = true;
+
+
+                        // todo: THIS WORKS NOW 
                         traffic.CurrentCycle = traffic.CalculateNextCycle();
-                        setInterval(MainDataLoop(traffic, client),10000)
+
+                     //   traffic.CalculateNextCycle(), function(thingy){
+                      //      console.log(thingy);
+                      //  }
+
+
+                       // setInterval(MainDataLoop(traffic, client),10000)
+                        let cycletime = traffic.GreenTime + traffic.ClearanceTime + traffic.OrangeTime;
+                       // setInterval(function(){ alert("Hello"); }, 3000);
+                       // setInterval(MainDataLoop(traffic,client),cycletime)
+                        //setInterval(() => MainDataLoop(traffic,client), cycletime)
+
+
+
                        // MainDataLoop(traffic, client);
                     }
                     // We got a JSON object
