@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-03-12T10:36:57.954+01:00
   initializedAtString: 2020-03-12T10:36:57.954+01:00
+=======
+  lastUpdatedAtString: 2020-03-10T11:58:19.130+01:00
+  initializedAtString: 2020-03-10T11:58:19.130+01:00
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
   ahead: 0
   behind: 0

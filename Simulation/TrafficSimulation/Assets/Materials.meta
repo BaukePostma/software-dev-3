@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1daf72ac6887bbb42aeb54d8c4790dff
+=======
+guid: f2ca396a0e95e9641b6de779b1680ac7
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

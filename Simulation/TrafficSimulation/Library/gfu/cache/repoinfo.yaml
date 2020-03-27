@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-03-12T10:36:35.403+01:00
   initializedAtString: 2020-03-12T10:36:35.403+01:00
+=======
+  lastUpdatedAtString: 2020-03-10T11:58:18.313+01:00
+  initializedAtString: 2020-03-10T11:58:18.313+01:00
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
   currentGitRemote:
     name: origin
     url: https://github.com/BaukePostma/software-dev-3.git
@@ -24,6 +29,7 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
+<<<<<<< HEAD
     name: master
     tracking: origin/master
   currentConfigBranch:
@@ -32,6 +38,16 @@ MonoBehaviour:
       name: origin
       url: https://github.com/BaukePostma/software-dev-3.git
     trackingBranch: master
+=======
+    name: WebsocketConnection
+    tracking: origin/WebsocketConnection
+  currentConfigBranch:
+    name: WebsocketConnection
+    remote:
+      name: origin
+      url: https://github.com/BaukePostma/software-dev-3.git
+    trackingBranch: WebsocketConnection
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
   currentConfigRemote:
     name: origin
     url: https://github.com/BaukePostma/software-dev-3.git

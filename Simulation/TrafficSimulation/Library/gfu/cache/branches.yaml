@@ -13,14 +13,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-03-05T12:11:31.164+01:00
   initializedAtString: 2020-03-05T12:11:31.143+01:00
   localBranches:
+=======
+  lastUpdatedAtString: 2020-03-09T19:42:10.200+01:00
+  initializedAtString: 2020-03-09T19:42:10.172+01:00
+  localBranches:
+  - name: JavaWebsocket
+    tracking: 
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
   - name: master
     tracking: origin/master
   remoteBranches:
   - name: origin/HEAD
     tracking: '[None]'
+<<<<<<< HEAD
+=======
+  - name: origin/master
+    tracking: '[None]'
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
   remotes:
   - name: origin
     url: https://github.com/BaukePostma/software-dev-3.git
@@ -31,8 +44,19 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+<<<<<<< HEAD
     - master
     values:
+=======
+    - JavaWebsocket
+    - master
+    values:
+    - name: JavaWebsocket
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
     - name: master
       remote:
         name: origin
@@ -44,6 +68,10 @@ MonoBehaviour:
     subKeys:
     - Values:
       - HEAD
+<<<<<<< HEAD
+=======
+      - master
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
     subKeyValues:
     - Values:
       - name: HEAD
@@ -51,6 +79,14 @@ MonoBehaviour:
           name: origin
           url: https://github.com/BaukePostma/software-dev-3.git
         trackingBranch: 
+<<<<<<< HEAD
+=======
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/BaukePostma/software-dev-3.git
+        trackingBranch: 
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
   configRemotes:
     keys:
     - origin

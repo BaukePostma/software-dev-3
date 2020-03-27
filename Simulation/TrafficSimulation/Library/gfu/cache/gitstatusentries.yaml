@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
   lastUpdatedAtString: 2020-03-12T10:36:57.580+01:00
   initializedAtString: 2020-03-12T10:36:57.580+01:00
   entries:
@@ -30734,3 +30735,62 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+=======
+  lastUpdatedAtString: 2020-03-10T12:04:21.585+01:00
+  initializedAtString: 2020-03-10T11:58:19.001+01:00
+  entries:
+  - path: Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\.suo
+    fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\.vs\TrafficSimulation\v15\.suo
+    projectPath: .vs\TrafficSimulation\v15\.suo
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Simulation\TrafficSimulation\Library\ArtifactDB
+    fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Simulation\TrafficSimulation\Library\EditorInstance.json
+    fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Simulation\TrafficSimulation\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Simulation\TrafficSimulation\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Simulation\TrafficSimulation\Library\gfu\cache\repoinfo.yaml
+    fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Simulation\TrafficSimulation\Library\SourceAssetDB
+    fullPath: D:\GithubRepos\software-dev-3\Simulation\TrafficSimulation\Library\SourceAssetDB
+    projectPath: Library\SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: socketiocontroller\index.js
+    fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\index.js
+    projectPath: ..\..\socketiocontroller\index.js
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: socketiocontroller\TrafficLogic\TrafficLogic.js
+    fullPath: D:\GithubRepos\software-dev-3\socketiocontroller\TrafficLogic\TrafficLogic.js
+    projectPath: ..\..\socketiocontroller\TrafficLogic\TrafficLogic.js
+    originalPath: 
+    indexStatus: 4
+    workTreeStatus: 3
+>>>>>>> parent of d856e2c... Removed the simulation for easier merging
