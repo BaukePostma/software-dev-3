@@ -56,10 +56,16 @@ module.exports =  class TrafficLogic {
         Determines what cycle should come next
         If a cycle has bus-priority, that should go first
         Otherwise,  Priority = Time since last cycle * Sum of all traffic for that cycle
-
-        TODO: Bus priority
         */
 
+        // If there is a bus, give it priority
+        if(this.CurrentTraffic.b5 !== "0")
+        {
+            return templates.GetCycle4()
+        }else if (this.CurrentTraffic.ab1 !== "0" || this.CurrentTraffic.ab2 !== "0")
+        {
+            return templates.GetCycle0();
+        }
         let priorities = {0:0, 1:0, 2:0, 3:0, 4:0 };
         let trafficSum =  this.GetTrafficSum(this.CurrentTraffic);
         for (let key in priorities){
@@ -70,15 +76,13 @@ module.exports =  class TrafficLogic {
         console.log(priorities);
         let priorityCycle ;
         let priorityHighscore = 0;
+
         // Loop over all possible cycles
         for(let key in priorities){
             if (priorityCycle != null) {
                 // IF cycle is higher than current priorityCycle
                if (priorities[key] >= priorityHighscore){
                    console.log("New cycle is higher than " + this.priorityCycle + "New cycle is " + priorities[key]);
-
-
-                   // todo :  PrioCycle = Keu OF prio
                    priorityCycle = key
                    priorityHighscore = priorities[key];
                }
@@ -94,36 +98,29 @@ module.exports =  class TrafficLogic {
         // TODO FIND A BETTER PLACE TO PUT THIS BIT OF CODE
         this.TimeSinceCycle[priorityCycle] =  0;
         return x;
-
-
-
     }
+
+    /*
+     Takes a lightObject, returns a lightObject that has turned all the
+     greens of the original into orange
+     */
     ChangeGreensToOrange(lightstatus){
          try{
              let orangelights =  templates.GetRed();
              for (let [key, value] of Object.entries(lightstatus)){
-                 // console.log("Key:" + key, "Value " + value);
-
                  if (value === 2){
                      orangelights[key] = 1;
-                     // value = 1;
                  }
              }
              return orangelights;
          } catch{
              console.log("CRAP. Lightstatus in ChangeGreensToOrange is "  + lightstatus)
          }
-
-         /*
-          Takes a lightObject, returns a lightObject that has turned all the
-          greens of the original into orange
-          */
-
-
-
     }
+
+    //Count all the cars for every possible cycle
+    // Returns an object literal 'cycle : traffic'
     GetTrafficSum(trafficstatus){
-        //let trafficCount = {0:0, 1:0, 2:0, 3:0, 4:0 };
 
         let cycle0 = templates.GetCycle0();
         let cycle1 = templates.GetCycle1();
@@ -141,11 +138,6 @@ module.exports =  class TrafficLogic {
         }
 
         return trafficCount;
-
-
-
-        // Takes a trafficstatus from the simulation, count up every piece of traffic for a cycle
-        // Returns an object literal 'cycle : traffic'
     }
     CalculateTraffic(cycle,trafficstatus){
         let sum =0;

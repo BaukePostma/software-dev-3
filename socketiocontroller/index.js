@@ -7,22 +7,24 @@ const wss = new WebSocket.Server({ port: 8080 });
 const traffic = new TrafficLogic;
 const templates = new LightObjectTemplates;
 
+//TODO Reconnect client if disconnect happend
   async function MainDataLoop(traffic, client){
 
 
     while(traffic.isLooping){
 
-        // TODO Async handling of incoming messages
-
-
-
-
         traffic.CurrentCycle = traffic.CalculateNextCycle();
-        let orange = traffic.ChangeGreensToOrange(traffic.CurrentCycle);
+
+        let orange;
+        try{
+            orange = traffic.ChangeGreensToOrange(traffic.CurrentCycle);
+        }
+        catch{
+            console.log("ERROR. ORANGE IS "  + orange)
+        }
 
         console.log("SENDING GREEN");
         client.send(JSON.stringify(traffic.CurrentCycle));
-       // setTimeout(function(){ client.send(JSON.stringify(traffic.CurrentCycle)) }, traffic.GreenTime);
         await sleep(traffic.GreenTime);
         console.log("GREENTIME DONE");
 
@@ -38,13 +40,7 @@ const templates = new LightObjectTemplates;
 
 
         traffic.IncrementTrafficTime(11500);
-
         console.log(traffic.TimeSinceCycle);
-
-        // setTimeout(client.send(JSON.stringify(LightObjectTemplates.prototype.GetRed())), traffic.OrangeTime);
-
-        //setTimeout(client.send(JSON.stringify(traffic.CurrentCycle)), traffic.ClearanceTime);
-
     }
 }
 
