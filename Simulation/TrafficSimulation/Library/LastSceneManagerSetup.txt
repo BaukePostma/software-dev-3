@@ -1,9 +1,0 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/sim.unity
-=======
-- path: Assets/testscene.unity
->>>>>>> parent of d856e2c... Removed the simulation for easier merging
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
