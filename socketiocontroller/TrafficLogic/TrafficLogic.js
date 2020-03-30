@@ -37,9 +37,9 @@ module.exports =  class TrafficLogic {
          return jsondebugresponse;
     }
     DebugSelectRandomCycle(){
-        let randomnumber = Math.floor(Math.random()*5)
+        let randomnumber = Math.floor(Math.random()*5);
 
-        console.log(randomnumber)
+        console.log(randomnumber);
         return LightObjectTemplates.prototype.GetCycle(randomnumber);
     }
     IterateOverLights(lightsObject){
@@ -59,10 +59,10 @@ module.exports =  class TrafficLogic {
         */
 
         // If there is a bus, give it priority
-        if(this.CurrentTraffic.b5 !== "0")
+        if(this.CurrentTraffic.B5 !== "0")
         {
             return templates.GetCycle4()
-        }else if (this.CurrentTraffic.ab1 !== "0" || this.CurrentTraffic.ab2 !== "0")
+        }else if (this.CurrentTraffic.AB1 !== "0" || this.CurrentTraffic.AB2 !== "0")
         {
             return templates.GetCycle0();
         }
@@ -83,12 +83,12 @@ module.exports =  class TrafficLogic {
                 // IF cycle is higher than current priorityCycle
                if (priorities[key] >= priorityHighscore){
                    console.log("New cycle is higher than " + this.priorityCycle + "New cycle is " + priorities[key]);
-                   priorityCycle = key
+                   priorityCycle = key;
                    priorityHighscore = priorities[key];
                }
 
             }else{
-                priorityCycle =key
+                priorityCycle =key;
                 priorityHighscore = priorities[key];
             }
         }
@@ -164,4 +164,4 @@ module.exports =  class TrafficLogic {
             this.TimeSinceCycle[key] =  this.TimeSinceCycle[key] + miliseconds;
         }
     }
-}
+};
