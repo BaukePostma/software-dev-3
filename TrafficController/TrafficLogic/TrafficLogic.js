@@ -1,41 +1,17 @@
-
-//const LightObject = require('./LightObject.js');
 const LightObjectTemplates = require('./LightObjectTemplates.js');
 const templates = new LightObjectTemplates;
 module.exports =  class TrafficLogic {
 
     CurrentCycle;
-    NextCycle;
     CurrentTraffic;
 
     TimeSinceCycle = {0:99999, 1:99999, 2:99999, 3:99999, 4:99999 };
-    GreenTime = 5000;
+    GreenTime = 8000;
     OrangeTime = 3500;
-    ClearanceTime = 3000;
-
+    ClearanceTime = 6000;
     isLooping = false;
 
-     CreateResponse(lightsstatus){
-        let traffic = JSON.parse(lightsstatus);
-        let response = this.DebugGenerateJsonResponse(traffic);
-        console.log(response);
 
-        return response;
-    }
-
-    CalculateLights(traffic) {
-
-      // Do some fancy shit on the traffic object to determine the best state
-
-        return Jsonobj;
-    }
-    //Temporary function. Returns an all red message
-    DebugGenerateJsonResponse(traffic){
-
-         let obj  = LightObjectTemplates.prototype.GetCycle0();
-         let jsondebugresponse = JSON.stringify(obj);
-         return jsondebugresponse;
-    }
     DebugSelectRandomCycle(){
         let randomnumber = Math.floor(Math.random()*5);
 
@@ -58,20 +34,20 @@ module.exports =  class TrafficLogic {
         Otherwise,  Priority = Time since last cycle * Sum of all traffic for that cycle
         */
 
-        // If there is a bus, give it priority
-        if(this.CurrentTraffic.B5 !== "0")
+        // If there is traffic on a buslane, give that cycle priority
+        if(this.CurrentTraffic.B5 !== 0)
         {
             return templates.GetCycle4()
-        }else if (this.CurrentTraffic.AB1 !== "0" || this.CurrentTraffic.AB2 !== "0")
+        }else if (this.CurrentTraffic.AB1 !== 0 || this.CurrentTraffic.AB2 !== 0)
         {
             return templates.GetCycle0();
         }
+
         let priorities = {0:0, 1:0, 2:0, 3:0, 4:0 };
         let trafficSum =  this.GetTrafficSum(this.CurrentTraffic);
         for (let key in priorities){
              priorities[key] = trafficSum[key] * this.TimeSinceCycle[key];
          }
-
         console.log("-- NEW PRIORITIES --");
         console.log(priorities);
         let priorityCycle ;
@@ -86,7 +62,6 @@ module.exports =  class TrafficLogic {
                    priorityCycle = key;
                    priorityHighscore = priorities[key];
                }
-
             }else{
                 priorityCycle =key;
                 priorityHighscore = priorities[key];
@@ -118,8 +93,10 @@ module.exports =  class TrafficLogic {
          }
     }
 
-    //Count all the cars for every possible cycle
-    // Returns an object literal 'cycle : traffic'
+    /*Count all the cars for every possible cycle
+      Returns an object literal 'cycle : traffic'
+
+     */
     GetTrafficSum(trafficstatus){
 
         let cycle0 = templates.GetCycle0();
@@ -128,39 +105,28 @@ module.exports =  class TrafficLogic {
         let cycle3 = templates.GetCycle3();
         let cycle4 = templates.GetCycle4();
 
-
-
-        let trafficCount = {0: this.CalculateTraffic(cycle0, trafficstatus),
-                            1: this.CalculateTraffic(cycle1, trafficstatus),
-                            2: this.CalculateTraffic(cycle2, trafficstatus),
-                            3: this.CalculateTraffic(cycle3, trafficstatus),
-                            4: this.CalculateTraffic(cycle4, trafficstatus)
-        }
-
-        return trafficCount;
+        return {0: this.CalculateTraffic(cycle0, trafficstatus),
+                1: this.CalculateTraffic(cycle1, trafficstatus),
+                2: this.CalculateTraffic(cycle2, trafficstatus),
+                3: this.CalculateTraffic(cycle3, trafficstatus),
+                4: this.CalculateTraffic(cycle4, trafficstatus)
+        };
     }
+
     CalculateTraffic(cycle,trafficstatus){
         let sum =0;
         for(let [key, value] of Object.entries(cycle)){
             if (value === 2){
-                // This is a a part of the cycle. Add traffic to sum
-               // console.log(trafficstatus);
-               // console.log("Adding to: " + trafficstatus[key]);
-               // console.log("Adding " + trafficstatus[key] + " to " + sum + ". key = " +key + " value is: " +value);
+                // If value === 2 , this traffic lane is part of this cycle. Add the traffic of this lane to the sum
                 sum = +sum + +trafficstatus[key];
-               // console.log("New value of sum is " + sum);
-
             }
-
         }
-        console.log("--- SUM OF THIS CYCLE  IS EQUAL TO " + sum)
+        console.log("--- SUM OF THIS CYCLE  IS EQUAL TO " + sum);
         return sum;
     }
 
     IncrementTrafficTime(miliseconds){
-
         for(let key in this.TimeSinceCycle){
-
             this.TimeSinceCycle[key] =  this.TimeSinceCycle[key] + miliseconds;
         }
     }

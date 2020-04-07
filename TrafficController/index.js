@@ -38,8 +38,7 @@ const templates = new LightObjectTemplates;
         await sleep(traffic.ClearanceTime);
         console.log("ClearanceTime  DONE");
 
-
-        traffic.IncrementTrafficTime(11500);
+        traffic.IncrementTrafficTime(traffic.ClearanceTime + traffic.OrangeTime + traffic.ClearanceTime);
         console.log(traffic.TimeSinceCycle);
     }
 }
@@ -69,41 +68,21 @@ console.log("Connection made");
             if (client.readyState === WebSocket.OPEN) {
                 if (isJson === 1){
                     traffic.CurrentTraffic = JSON.parse(data);
-                    // TODO Start the loop if not already started, otherwise set the new incoming traffic
                     if (!traffic.isLooping){
-
-
-
-                        // todo: THIS WORKS NOW
-                      //  traffic.CurrentCycle = traffic.CalculateNextCycle();
-
-                     //   traffic.CalculateNextCycle(), function(thingy){
-                      //      console.log(thingy);
-                      //  }
                         traffic.isLooping = true;
                         MainDataLoop(traffic,client);
-
-                       // setInterval(MainDataLoop(traffic, client),10000)
                         let cycletime = traffic.GreenTime + traffic.ClearanceTime + traffic.OrangeTime;
                         console.log("FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping);
-                       // setInterval(function(){ alert("Hello"); }, 3000);
-                       // setInterval(MainDataLoop(traffic,client),cycletime)
-                        //setInterval(() => MainDataLoop(traffic,client), cycletime)
-
-
-
-                       // MainDataLoop(traffic, client);
 
                     }else{
                         console.log("NOT THE FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping );
 
                     }
-                    // We got a JSON object
-                    // (Optional - Check JSOn validity)
+                    // (Optional todo - Check JSOn validity)
 
                     /*
                     1. Parse the JSOn
-                    2. Calculate what thing should go first
+                    2. Calculate what  should go first
                     3.    Cycles  Priority = Time since last cycle * Sum of all traffic for that cycle
                     4.
                         Pick a cycle. Send the cycle to the simulation. CurrentCycle = this cycle
@@ -115,21 +94,8 @@ console.log("Connection made");
 
                      */
 
-
-
-
-
-
-                 //   controller.StartDataLoop();
-                    //Send a first, random cycle to the client
-                    //let randomCycle = traffic.DebugSelectRandomCycle();
-                   // client.send(JSON.stringify(randomCycle));
-                   // traffic.CurrentCycle = randomCycle;
-
-                   // client.send(traffic.CreateResponse(data))
-
                 } else{
-                    client.send("No comprende JSonerino senor");
+                    client.send("ERROR - Could not parse message as JSON");
                 }
             }
         });

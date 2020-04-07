@@ -37,13 +37,13 @@ module.exports = class LightObjectTemplates{
         status.B4 = 2;
 
         return status;
-    }
+    }d
      GetCycle1(){
         //Groen op de kaart
         let status = new LightObject;
         status.A1 = 2;
         status.D3 = 2;
-        status.E1 = 2;
+        //status.E1 = 2;
         status.E2 = 2;
         status.EV1 = 2;
         status.EV2 = 2;
@@ -59,7 +59,7 @@ module.exports = class LightObjectTemplates{
         status.C1 = 2;
         status.C2 = 2;
         status.D3 = 2;
-        status.E1 = 2;
+        //status.E1 = 2;
         status.E2 = 2;
         status.EV1 = 2;
         status.EV2 = 2;
