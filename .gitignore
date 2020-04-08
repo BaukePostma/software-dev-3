@@ -1,0 +1,41 @@
+###
+# Unity folders and files
+###
+Simulation/[Aa]ssets/AssetStoreTools*
+Simulation/[Bb]uild/
+Simulation/[Ll]ibrary/
+Simulation/[Ll]ocal[Cc]ache/
+Simulation/[Oo]bj/
+Simulation/[Tt]emp/
+Simulation/[Uu]nityGenerated/
+# file on crash reports
+Simulation/sysinfo.txt
+# Unity3D generated meta files
+Simulation/*.pidb.meta
+
+###
+# VS/MD solution and project files
+###
+Simulation/[Ee]xportedObj/
+Simulation/*.booproj
+Simulation/*.csproj
+Simulation/*.sln
+Simulation/*.suo
+Simulation/*.svd
+Simulation/*.unityproj
+Simulation/*.user
+Simulation/*.userprefs
+Simulation/*.pidb
+Simulation/.DS_Store
+
+###
+# OS generated
+###
+Simulation/.DS_Store
+Simulation/.DS_Store?
+Simulation/._*
+Simulation/.Spotlight-V100
+Simulation/.Trashes
+Simulation/Icon?
+Simulation/ehthumbs.db
+Simulation/Thumbs.db

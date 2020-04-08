@@ -7,19 +7,11 @@ public class CarSpawner : MonoBehaviour
     public Transform spawnPos;
     public GameObject spawnee;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GameObject thing = Instantiate(spawnee, spawnPos.position, spawnPos.rotation) as GameObject;
-            thing.AddComponent < MoveStraightAhead >();
-        }
-    }
-
     public void SpawnCar()
     {
         GameObject thing = Instantiate(spawnee, spawnPos.position, spawnPos.rotation) as GameObject;
-        thing.AddComponent<MoveStraightAhead>();
+        thing.GetComponent<MovementStatus>().SetSpawnLocation(spawnPos);
+        thing.GetComponent<MovementStatus>().SetSpawnName(spawnPos.name);
+        thing.AddComponent<Movement>();
     }
 }

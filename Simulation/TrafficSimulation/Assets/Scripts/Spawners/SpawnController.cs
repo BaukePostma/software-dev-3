@@ -27,15 +27,27 @@ public class SpawnController : MonoBehaviour
 
     private void SpawnTraffic()
     {
-        
-        CarSpawner[] spawners = GetComponentsInChildren<CarSpawner>();
+        DetectorScript[] detectors = GameObject.Find("Detectors").GetComponentsInChildren<DetectorScript>();
 
-        foreach (var thing in spawners)
+        foreach (var item in detectors)
         {
-            thing.SpawnCar();
-            Debug.Log("once");
+            if(item.GetAmountOfTraffic() < 5)
+            {
+                string detectorName = item.gameObject.name;
+
+                CarSpawner[] spawners = GetComponentsInChildren<CarSpawner>();
+
+                foreach (var thing in spawners)
+                {
+                    string spawnerName = thing.gameObject.name;
+                    if (detectorName[0] == spawnerName[0] && detectorName[1] == spawnerName[1] && detectorName[2] == spawnerName[2])
+                    {
+                        thing.SpawnCar();
+                    }
+                }
+
+
+            }
         }
-
-
     }
 }

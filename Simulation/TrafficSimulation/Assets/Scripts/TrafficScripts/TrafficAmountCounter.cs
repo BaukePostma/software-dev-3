@@ -29,7 +29,7 @@ public class TrafficAmountCounter : MonoBehaviour
 
         foreach (DetectorScript detector in detectors)
         {
-            Debug.Log(detector.GetAmountOfTraffic() + " " + detector.gameObject.name);
+            //Debug.Log(detector.GetAmountOfTraffic() + " " + detector.gameObject.name);
 
             string laneName = "";
             char[] ding = detector.gameObject.name.ToCharArray();
@@ -52,16 +52,18 @@ public class TrafficAmountCounter : MonoBehaviour
 
     private string ConvertToJson(Dictionary<string, int> LaneAndAmount)
     {
-        string jsonString = "{";
-        foreach(var element in LaneAndAmount)
+        string jsonString = "{ok";
+        foreach (var element in LaneAndAmount)
         {
-            jsonString += element.Key + ": " + element.Value + ", ";
+            jsonString += "ok";
+            //jsonString += element.Key + ": " + element.Value + ", ";
         }
         int b = jsonString.Length;
-        jsonString = jsonString.Remove(jsonString.Length - 2); // om den laatschte komma te verwijderen
+        //jsonString = jsonString.Remove(jsonString.Length - 2); // om den laatschte komma te verwijderen
         jsonString += "}";
-        Debug.Log(jsonString);
+        //Debug.Log(jsonString);
         return jsonString;
+
         //var jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString);
         //Console.WriteLine(jsonObj);
 

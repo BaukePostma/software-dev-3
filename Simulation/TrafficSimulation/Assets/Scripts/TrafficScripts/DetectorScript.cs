@@ -24,7 +24,7 @@ public class DetectorScript : MonoBehaviour
         render.material.color = Color.green;
 
         AmountOfTraffic++;
-        Debug.Log(AmountOfTraffic + " " + this.gameObject.name);
+        //Debug.Log(AmountOfTraffic + " " + this.gameObject.name);
     }
 
     private void OnTriggerExit(Collider other)
@@ -33,7 +33,7 @@ public class DetectorScript : MonoBehaviour
         render.material.color = Color.white;
 
         AmountOfTraffic--;
-        Debug.Log(AmountOfTraffic + " " + this.gameObject.name);
+        //Debug.Log(AmountOfTraffic + " " + this.gameObject.name);
     }
 
     public int GetAmountOfTraffic()

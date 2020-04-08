@@ -48,8 +48,47 @@ public class TrafficLightController : MonoBehaviour
             uLights.Add("GF1", 1);
             uLights.Add("GF2", 1);
             SetTrafficLightColors(uLights);
-
-
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Dictionary<string, int> uLights = new Dictionary<string, int>();
+            uLights.Add("A1", 2);
+            uLights.Add("A2", 2);
+            uLights.Add("A3", 2);
+            uLights.Add("A4", 2);
+            uLights.Add("AB1", 2);
+            uLights.Add("AB2", 2);
+            uLights.Add("B1", 2);
+            uLights.Add("B2", 2);
+            uLights.Add("B3", 2);
+            uLights.Add("B4", 2);
+            uLights.Add("B5", 2);
+            uLights.Add("BB1", 2);
+            uLights.Add("C1", 2);
+            uLights.Add("C2", 2);
+            uLights.Add("C3", 2);
+            uLights.Add("D1", 2);
+            uLights.Add("D2", 2);
+            uLights.Add("D3", 2);
+            uLights.Add("E1", 2);
+            uLights.Add("E2", 2);
+            uLights.Add("EV1", 2);
+            uLights.Add("EV2", 2);
+            uLights.Add("EV3", 2);
+            uLights.Add("EV4", 2);
+            uLights.Add("FV1", 2);
+            uLights.Add("FV2", 2);
+            uLights.Add("FV3", 2);
+            uLights.Add("FV4", 2);
+            uLights.Add("FF1", 2);
+            uLights.Add("FF2", 2);
+            uLights.Add("GV1", 2);
+            uLights.Add("GV2", 2);
+            uLights.Add("GV3", 2);
+            uLights.Add("GV4", 2);
+            uLights.Add("GF1", 2);
+            uLights.Add("GF2", 2);
+            SetTrafficLightColors(uLights);
         }
     }
 

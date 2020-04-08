@@ -16,7 +16,7 @@ public class ObjectDestroyer : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "ObjectDestroyer")
+        if(collision.gameObject.name.Contains("ObjectDestroyer"))
         {
             Destruction();
         }

@@ -62,46 +62,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\NativeWebSocket.cs" />
+    <Compile Include="Assets\Scripts\EntityBehavior\DetectOtherEntities.cs" />
+    <Compile Include="Assets\Scripts\EntityBehavior\DetectTrafficLightStatus.cs" />
+    <Compile Include="Assets\Scripts\EntityBehavior\MovementStatus.cs" />
     <Compile Include="Assets\Scripts\Spawners\CarSpawner.cs" />
     <Compile Include="Assets\Scripts\Spawners\ObjectDestroyer.cs" />
     <Compile Include="Assets\Scripts\Spawners\SpawnController.cs" />
     <Compile Include="Assets\Scripts\Testscripts\MovementForTestCube.cs" />
     <Compile Include="Assets\Scripts\TrafficLights\SetTrafficLight.cs" />
     <Compile Include="Assets\Scripts\TrafficLights\TrafficLightController.cs" />
-    <Compile Include="Assets\Scripts\TrafficMovement\MoveStraightAhead.cs" />
+    <Compile Include="Assets\Scripts\TrafficMovement\Movement.cs" />
     <Compile Include="Assets\Scripts\TrafficScripts\DetectorScript.cs" />
     <Compile Include="Assets\Scripts\TrafficScripts\TrafficAmountCounter.cs" />
-    <Compile Include="Assets\Scripts\WebSocketConnection.cs" />
     <Compile Include="Assets\Scripts\Websockets\NativeWebSocket.cs" />
     <Compile Include="Assets\Scripts\Websockets\WebSocketConnector.cs" />
-    <Compile Include="Assets\WebSocketConnector.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/pfleb/Desktop/software-dev-3-WebsocketConnection/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/pfleb/Documents/GitHub/software-dev-3/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/pfleb/Desktop/software-dev-3-WebsocketConnection/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/pfleb/Documents/GitHub/software-dev-3/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/pfleb/Desktop/software-dev-3-WebsocketConnection/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/pfleb/Documents/GitHub/software-dev-3/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/pfleb/Desktop/software-dev-3-WebsocketConnection/Simulation/TrafficSimulation/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/pfleb/Documents/GitHub/software-dev-3/Simulation/TrafficSimulation/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/pfleb/Desktop/software-dev-3-WebsocketConnection/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/pfleb/Documents/GitHub/software-dev-3/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/pfleb/Desktop/software-dev-3-WebsocketConnection/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/pfleb/Documents/GitHub/software-dev-3/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/pfleb/Desktop/software-dev-3-WebsocketConnection/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/pfleb/Documents/GitHub/software-dev-3/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/pfleb/Desktop/software-dev-3-WebsocketConnection/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/pfleb/Documents/GitHub/software-dev-3/Simulation/TrafficSimulation/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/pfleb/Desktop/software-dev-3-WebsocketConnection/Simulation/TrafficSimulation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/pfleb/Documents/GitHub/software-dev-3/Simulation/TrafficSimulation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
