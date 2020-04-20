@@ -35,12 +35,16 @@ module.exports =  class TrafficLogic {
         */
 
         // If there is traffic on a buslane, give that cycle priority
-        if(this.CurrentTraffic.B5 !== 0)
+        if(this.CurrentTraffic.BB1 !== 0)
         {
-            return templates.GetCycle4()
+            console.log("BB1 buslane has trafffic");
+            let x = templates.GetCycle3();
+           // return x;
         }else if (this.CurrentTraffic.AB1 !== 0 || this.CurrentTraffic.AB2 !== 0)
         {
-            return templates.GetCycle0();
+            console.log("AB1 or AB2  buslane has trafffic");
+            let x = templates.GetCycle0();
+           // return x;
         }
 
         let priorities = {0:0, 1:0, 2:0, 3:0, 4:0 };
@@ -72,6 +76,7 @@ module.exports =  class TrafficLogic {
 
         // TODO FIND A BETTER PLACE TO PUT THIS BIT OF CODE
         this.TimeSinceCycle[priorityCycle] =  0;
+        console.log("PriorirtyCycle time has beeen set to: " + this.TimeSinceCycle[priorityCycle]);
         return x;
     }
 

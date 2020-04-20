@@ -13,7 +13,16 @@ const templates = new LightObjectTemplates;
 
     while(traffic.isLooping){
 
+        if(client.readyState ===  WebSocket.CLOSED){
+            console.log('Client is gone')
+            traffic.isLooping = false;
+            traffic.TimeSinceCycle = {0:99999, 1:99999, 2:99999, 3:99999, 4:99999 };
+            return;
+        }
+
+        console.log("Old CurrentCycle: " + traffic.CurrentCycle);
         traffic.CurrentCycle = traffic.CalculateNextCycle();
+        console.log("New CurrentCycle: " + traffic.CurrentCycle);
 
         let orange;
         try{
@@ -65,6 +74,9 @@ console.log("Connection made");
         }
 
         wss.clients.forEach( function each(client) {
+
+            console.log('Clients size: ' + wss.clients.size);
+
             if (client.readyState === WebSocket.OPEN) {
                 if (isJson === 1){
                     traffic.CurrentTraffic = JSON.parse(data);
@@ -72,10 +84,10 @@ console.log("Connection made");
                         traffic.isLooping = true;
                         MainDataLoop(traffic,client);
                         let cycletime = traffic.GreenTime + traffic.ClearanceTime + traffic.OrangeTime;
-                        console.log("FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping);
+                        //console.log("FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping);
 
                     }else{
-                        console.log("NOT THE FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping );
+                       // console.log("NOT THE FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping );
 
                     }
                     // (Optional todo - Check JSOn validity)
@@ -99,6 +111,11 @@ console.log("Connection made");
                 }
             }
         });
+    });
+
+    ws.on('close', function close() {
+        console.log(  'disconnected');
+
     });
 });
 
