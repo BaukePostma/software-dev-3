@@ -30,25 +30,19 @@ module.exports =  class TrafficLogic {
 
         /*
         Determines what cycle should come next
-        If a cycle has bus-priority, that should go first
+        Increase the weight of buslanes beore calculations
         Otherwise,  Priority = Time since last cycle * Sum of all traffic for that cycle
         */
 
-        // If there is traffic on a buslane, give that cycle priority
-        if(this.CurrentTraffic.BB1 !== 0)
-        {
-            console.log("BB1 buslane has trafffic");
-            let x = templates.GetCycle3();
-           // return x;
-        }else if (this.CurrentTraffic.AB1 !== 0 || this.CurrentTraffic.AB2 !== 0)
-        {
-            console.log("AB1 or AB2  buslane has trafffic");
-            let x = templates.GetCycle0();
-           // return x;
-        }
+        // If there is traffic on a buslane, double that amount to make it count for more
+        this.CurrentTraffic.BB1 += this.CurrentTraffic.BB1;
+        this.CurrentTraffic.AB1 += this.CurrentTraffic.AB1;
+        this.CurrentTraffic.AB2 += this.CurrentTraffic.AB2;
 
         let priorities = {0:0, 1:0, 2:0, 3:0, 4:0 };
         let trafficSum =  this.GetTrafficSum(this.CurrentTraffic);
+
+
         for (let key in priorities){
              priorities[key] = trafficSum[key] * this.TimeSinceCycle[key];
          }

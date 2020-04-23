@@ -60,7 +60,13 @@ function sleep(ms) {
 
 wss.on('connection', function connection(ws) {
 
-console.log("Connection made");
+    console.log("Connection made");
+
+    if (wss.clients.size>1){
+       ws.send("Someone is already connected. This controller cannot support multiple clients. Please wait a minute before reconnecting");
+       ws.close();
+       console.log('Disconnecting new client');
+    }
 
     ws.on('message', function incoming(data) {
         console.log(data);
@@ -75,22 +81,14 @@ console.log("Connection made");
 
         wss.clients.forEach( function each(client) {
 
-            console.log('Clients size: ' + wss.clients.size);
-
             if (client.readyState === WebSocket.OPEN) {
                 if (isJson === 1){
                     traffic.CurrentTraffic = JSON.parse(data);
                     if (!traffic.isLooping){
                         traffic.isLooping = true;
                         MainDataLoop(traffic,client);
-                        let cycletime = traffic.GreenTime + traffic.ClearanceTime + traffic.OrangeTime;
-                        //console.log("FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping);
 
-                    }else{
-                       // console.log("NOT THE FIRST TIME LOOPING. ISLOOPING IS " + traffic.isLooping );
-
-                    }
-                    // (Optional todo - Check JSOn validity)
+                    // todo (Optional  - Check JSOn validity)
 
                     /*
                     1. Parse the JSOn
@@ -102,8 +100,6 @@ console.log("Connection made");
                         Use the latest data from the sim to determine new highest priority cycle.
                         After Orangetime seconds has passed, send red signal
                         After clearance time seconds have passed, send next highest priority cycle
-
-
                      */
 
                 } else{
@@ -114,7 +110,7 @@ console.log("Connection made");
     });
 
     ws.on('close', function close() {
-        console.log(  'disconnected');
+        console.log(  'client disconnected');
 
     });
 });
