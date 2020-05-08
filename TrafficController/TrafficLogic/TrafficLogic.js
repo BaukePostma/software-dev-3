@@ -12,26 +12,26 @@ module.exports =  class TrafficLogic {
     isLooping = false;
 
 
-    DebugSelectRandomCycle(){
-        let randomnumber = Math.floor(Math.random()*5);
-
-        console.log(randomnumber);
-        return LightObjectTemplates.prototype.GetCycle(randomnumber);
-    }
-    IterateOverLights(lightsObject){
-
-         lightsObject = JSON.parse(lightsObject);
-         Object.keys(lightsObject).forEach(function(key){
-             console.log("Key:   " + key);
-             console.log("Value: " + lightsObject[key]);
-         })
-    }
+    // DebugSelectRandomCycle(){
+    //     let randomnumber = Math.floor(Math.random()*5);
+    //
+    //     console.log(randomnumber);
+    //     return LightObjectTemplates.prototype.GetCycle(randomnumber);
+    // }
+    // IterateOverLights(lightsObject){
+    //
+    //      lightsObject = JSON.parse(lightsObject);
+    //      Object.keys(lightsObject).forEach(function(key){
+    //          console.log("Key:   " + key);
+    //          console.log("Value: " + lightsObject[key]);
+    //      })
+    // }
     CalculateNextCycle(){
 
-        /*
+        /**
         Determines what cycle should come next
-        Increase the weight of buslanes beore calculations
-        Otherwise,  Priority = Time since last cycle * Sum of all traffic for that cycle
+        Increase the weight of buslanes before calculations
+        Priority = Time since last cycle * Sum of all traffic for that cycle
         */
 
         // If there is traffic on a buslane, double that amount to make it count for more
@@ -74,7 +74,7 @@ module.exports =  class TrafficLogic {
         return x;
     }
 
-    /*
+    /**
      Takes a lightObject, returns a lightObject that has turned all the
      greens of the original into orange
      */
@@ -88,13 +88,13 @@ module.exports =  class TrafficLogic {
              }
              return orangelights;
          } catch{
-             console.log("CRAP. Lightstatus in ChangeGreensToOrange is "  + lightstatus)
+             console.log("ERROR. Lightstatus in ChangeGreensToOrange is "  + lightstatus)
          }
     }
 
-    /*Count all the cars for every possible cycle
-      Returns an object literal 'cycle : traffic'
-
+    /**
+     * Count all the cars for every possible cycle
+      * Returns an object literal 'cycle : traffic'
      */
     GetTrafficSum(trafficstatus){
 

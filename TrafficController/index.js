@@ -7,9 +7,10 @@ const wss = new WebSocket.Server({ port: 8080 });
 const traffic = new TrafficLogic;
 const templates = new LightObjectTemplates;
 
-//TODO Reconnect client if disconnect happend
+/**
+ * Main loop once a client has connected
+ */
   async function MainDataLoop(traffic, client){
-
 
     while(traffic.isLooping){
 
@@ -84,23 +85,11 @@ wss.on('connection', function connection(ws) {
             if (client.readyState === WebSocket.OPEN) {
                 if (isJson === 1){
                     traffic.CurrentTraffic = JSON.parse(data);
-                    if (!traffic.isLooping){
+                    if (!traffic.isLooping) {
                         traffic.isLooping = true;
-                        MainDataLoop(traffic,client);
-
+                        MainDataLoop(traffic, client);
+                    }
                     // todo (Optional  - Check JSOn validity)
-
-                    /*
-                    1. Parse the JSOn
-                    2. Calculate what  should go first
-                    3.    Cycles  Priority = Time since last cycle * Sum of all traffic for that cycle
-                    4.
-                        Pick a cycle. Send the cycle to the simulation. CurrentCycle = this cycle
-                        After GreenTime seconds has passed, loop over currentcycle. set all greens to orange. send this status to simulation
-                        Use the latest data from the sim to determine new highest priority cycle.
-                        After Orangetime seconds has passed, send red signal
-                        After clearance time seconds have passed, send next highest priority cycle
-                     */
 
                 } else{
                     client.send("ERROR - Could not parse message as JSON");

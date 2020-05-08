@@ -32,10 +32,11 @@ module.exports = class LightObjectTemplates{
         status.A2 = 2;
         status.A3 = 2;
         status.A4 = 2;
-        status.AB1 = 2;
-        status.AB2 = 2;
-        status.B2 = 2;
-        status.B3 = 2;
+        //status.AB1 = 2;
+        //status.AB2 = 2;
+      //  status.B2 = 2;
+       // status.B3 = 2;
+         status.BB1 =2
         status.B5 = 2;
         status.FV1 = 2;
         status.FV2 = 2;
@@ -45,12 +46,13 @@ module.exports = class LightObjectTemplates{
         status.FF2= 2;
 
         return status;
-    }d
+    }
      GetCycle1(){
         //Groen op de kaart
         let status = new LightObject;
 
         status.B4 = 2;
+
         status.D1 = 2;
         status.D2 = 2;
         status.GF1 = 2;
@@ -85,6 +87,8 @@ module.exports = class LightObjectTemplates{
         let status = new LightObject;
         status.A1 = 2;
         status.B1 = 2;
+        status.C3 = 2;
+        status.D3 = 2;
 
         return status;
     }
@@ -92,9 +96,17 @@ module.exports = class LightObjectTemplates{
     GetCycle4(){
         //Blauw op de kaart
         let status = new LightObject;
-
         status.AB1 = 2;
-        status.D3 =2;
+        status.B2 =2;
+        status.B3 =2;
+        status.B5 = 2;
+        status.FF1 =2;
+        status.FF2 =2;
+        status.FV1 = 2;
+        status.FV2 = 2;
+        status.FV3 = 2;
+        status.FV4 = 2;
+        //status.D3 =2;
 
         return status;
     }
