@@ -32,11 +32,7 @@ module.exports = class LightObjectTemplates{
         status.A2 = 2;
         status.A3 = 2;
         status.A4 = 2;
-        //status.AB1 = 2;
-        //status.AB2 = 2;
-      //  status.B2 = 2;
-       // status.B3 = 2;
-         status.BB1 =2
+        status.BB1 =2;
         status.B5 = 2;
         status.FV1 = 2;
         status.FV2 = 2;
@@ -52,7 +48,6 @@ module.exports = class LightObjectTemplates{
         let status = new LightObject;
 
         status.B4 = 2;
-
         status.D1 = 2;
         status.D2 = 2;
         status.GF1 = 2;
@@ -68,7 +63,6 @@ module.exports = class LightObjectTemplates{
     GetCycle2(){
         //Cyaan op de kaart
 
-        // D3 en C1 kan niet?
         let status = new LightObject;
         status.C1 = 2;
         status.C2 = 2;
@@ -106,7 +100,6 @@ module.exports = class LightObjectTemplates{
         status.FV2 = 2;
         status.FV3 = 2;
         status.FV4 = 2;
-        //status.D3 =2;
 
         return status;
     }

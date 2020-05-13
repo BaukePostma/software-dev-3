@@ -8,16 +8,23 @@ const traffic = new TrafficLogic;
 const templates = new LightObjectTemplates;
 
 /**
- * Main loop once a client has connected
+ * Entry point for the program. Run this file with Node with the command 'node index.js' in the prompt.
+ *
+ */
+
+/**
+ * Main loop that starts once a client has connected.
  */
   async function MainDataLoop(traffic, client){
 
     while(traffic.isLooping){
 
         if(client.readyState ===  WebSocket.CLOSED){
-            console.log('Client is gone')
+            console.log('Client is gone. Restarting');
             traffic.isLooping = false;
             traffic.TimeSinceCycle = {0:99999, 1:99999, 2:99999, 3:99999, 4:99999 };
+            traffic.CurrentCycle = undefined;
+            traffic.CurrentTraffic = undefined;
             return;
         }
 
@@ -59,6 +66,9 @@ function sleep(ms) {
     });
 }
 
+/**
+ *  On connecct event handler
+ */
 wss.on('connection', function connection(ws) {
 
     console.log("Connection made");
@@ -69,12 +79,13 @@ wss.on('connection', function connection(ws) {
        console.log('Disconnecting new client');
     }
 
+    // On message event handler
     ws.on('message', function incoming(data) {
-        console.log(data);
+        console.log("Incoming message: " + data);
         let isJson;
         //Check if the message is JSON
         try  {
-            JSON.parse(data);
+            traffic.CurrentTraffic  =JSON.parse(data);
             isJson = 1;
         } catch(e){
             console.log("Not JSON")
@@ -82,24 +93,22 @@ wss.on('connection', function connection(ws) {
 
         wss.clients.forEach( function each(client) {
 
-            if (client.readyState === WebSocket.OPEN) {
-                if (isJson === 1){
-                    traffic.CurrentTraffic = JSON.parse(data);
-                    if (!traffic.isLooping) {
-                        traffic.isLooping = true;
-                        MainDataLoop(traffic, client);
-                    }
-                    // todo (Optional  - Check JSOn validity)
-
+            if (client.readyState === WebSocket.OPEN &&  isJson === 1) {
+                if (!traffic.isLooping) {
+                    traffic.isLooping = true;
+                    MainDataLoop(traffic, client);
                 } else{
-                    client.send("ERROR - Could not parse message as JSON");
+                    client.send("ERROR - There is already a loop in progress");
                 }
             }
         });
     });
 
+    /**
+     * On disconnect event handler
+     */
     ws.on('close', function close() {
-        console.log(  'client disconnected');
+        console.log( 'client disconnected');
 
     });
 });
