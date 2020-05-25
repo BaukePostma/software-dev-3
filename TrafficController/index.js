@@ -98,7 +98,7 @@ wss.on('connection', function connection(ws) {
                     traffic.isLooping = true;
                     MainDataLoop(traffic, client);
                 } else{
-                    client.send("ERROR - There is already a loop in progress");
+                   // client.send("ERROR - There is already a loop in progress");
                 }
             }
         });
